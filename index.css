@@ -7,7 +7,7 @@
 /*NAVIGATION MENU*/
 
 nav {
-    background-color: green;
+    background-color: white;
     /* display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -34,6 +34,7 @@ nav {
 .nav-links li a {
     text-decoration: none;
     color: black;
+    font-weight: bolder;
 }
 
 .nav-links li a:hover {
@@ -41,9 +42,20 @@ nav {
     color: rgb(48, 48, 48);
 }
 
-#banner-photo {
+#banner {
+    background-image: url("assets/browardvilla-scenery.jpg");
+    background-size: cover;
+    background-position-x: 40%;
+    background-position-y: 80%;
+    height: 48em;
+    max-width: 100%;
+    overflow: hidden; 
+
+}
+
+/* #banner-photo {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     display: block;
-}
+} */
