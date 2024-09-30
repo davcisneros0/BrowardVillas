@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Roboto", sans-serif
+}
+
+.animate-text {
+
+}
+
 /*NAVIGATION MENU*/
 
 nav {
@@ -45,12 +53,16 @@ nav {
 #banner {
     background-image: url("assets/browardvilla-scenery.jpg");
     background-size: cover;
-    background-position-x: 40%;
+    background-position-x: center;
     background-position-y: 80%;
     height: 48em;
+    /* height: 100vh; */
     max-width: 100%;
     overflow: hidden; 
-
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* #banner-photo {
@@ -58,4 +70,52 @@ nav {
     height: auto;
     object-fit: cover;
     display: block;
+} */
+
+#banner-frame {
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;  */
+    /* display: grid;
+    position: relative;
+    grid-area: 2 / 2 / 3 / 3; */
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#banner-frame p { 
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+}
+
+#banner-frame h1 {
+    /* background-color: red; */
+    padding: 20px;
+    width: 100%;
+}
+
+#banner-frame button {
+    background-color: rgb(162, 133, 165);
+    color: white;
+    padding: 1%;
+    font-size: 0.5em;
+    border: transparent;
+    margin-top: 5%;
+    padding: 2% 3% 2% 3%;
+}
+
+/* #about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(112, 0, 112);
+    color: white;
+    overflow: hidden; 
+    /* display: grid;
+    align-items: center;
+    grid-template-columns: auto 70rem auto;
 } */
