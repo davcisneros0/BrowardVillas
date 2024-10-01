@@ -1,18 +1,20 @@
-// document.addEventListener('scroll', () => {
-//     const textContainer = document.querySelector('.slide-text-container');
-//     const textPosition = textContainer.getBoundingClientRect();
+//MAKE VARIABLE THAT ATTACHS TO .ABOUT-CONTAINER.. SECTION THAT HOLDS PARAGRAPHS AND DIVS INSIDE
+const paragraphs = document.querySelectorAll(".about-container");
 
-//     if (textPosition.top < window.innerHeight && textPosition.bottom >= 0) {
-//         textContainer.querySelector('.animated-text').classList.add('show');
-//     }
-// });
+//WHEN USER SCROLLS DOWN TO SECTION, FADES IN WHEN USER IS CLOSE TO SECTION
+document.addEventListener("scroll", function() {
+    paragraphs.forEach(paragraph => {
+        if(textInView(paragraph)) {
+            paragraph.classList.add("about-container--visible");
+        }
+    });
+});
 
-// var wrapper = document.getElementsByClassName("animated-text");
-
-// wrapper.innerHTML = wrapper.textContent.replace(/./g,"<span>$&</span>");
-
-// var spans = wrapper.getElementsByTagName("p");
-
-// for (let i = 0; i < spans.length; i++) {
-//     spans[i].style.animationDelay = i*80+"ms";
-// }
+//FADE IN FUNCTION
+function textInView(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.bottom > 0 && 
+        rect.top < (window.innerHeight - 150 || document.documentElement.clientHeight - 150)
+    );
+}

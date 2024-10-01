@@ -140,12 +140,14 @@ nav {
     padding: 2% 3% 2% 3%;
 }
 
+/*ABOUT SECTION*******************/
+
 #about {
     /* display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  */
+    flex-direction: column;*/
+    /* justify-content: center;
+    align-items: center;   */
     background-color: rgb(103, 55, 103);
     color: white;
     overflow: hidden; 
@@ -155,7 +157,7 @@ nav {
 } 
 
 .about-container {
-    background-color: green;
+    /* background-color: green; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -163,16 +165,28 @@ nav {
     align-items: center; 
     text-align: center;
     width: 80%;
+    margin-left: 10%;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
 }
 
+.about-container--visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
 #about h3 {
-    background-color: red;
+    /* background-color: red; */
     font-size: 2.4em;
     /* display: inline; */
-    text-align: center;
+    /* text-align: center; */
+    margin-bottom: 1%;
 }
 .about-icons {
     /* background-color: green; */
     padding: 2%;
     font-size: 7em;
+    color: rgb(200, 200, 200);
 }
