@@ -1,11 +1,11 @@
 //MAKE VARIABLE THAT ATTACHS TO .ABOUT-CONTAINER.. SECTION THAT HOLDS PARAGRAPHS AND DIVS INSIDE
-const paragraphs = document.querySelectorAll(".about-container");
+const paragraphs = document.querySelectorAll(".fadeInEffect");
 
 //WHEN USER SCROLLS DOWN TO SECTION, FADES IN WHEN USER IS CLOSE TO SECTION
 document.addEventListener("scroll", function() {
     paragraphs.forEach(paragraph => {
         if(textInView(paragraph)) {
-            paragraph.classList.add("about-container--visible");
+            paragraph.classList.add("fadeInEffect--visible");
         }
     });
 });

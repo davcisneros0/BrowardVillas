@@ -178,6 +178,20 @@ nav {
 }
 
 
+
+.fadeInEffect {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.fadeInEffect--visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
 #about h3 {
     /* background-color: red; */
     font-size: 2.4em;
