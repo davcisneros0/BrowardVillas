@@ -8,11 +8,34 @@ body {
     font-family: "Roboto", sans-serif
 }
 
-.animate-text {
+/*.animated-text {
+    position: relative;
+    transform: translate(0%, 0%);
+    animation: fade 400ms ease-in-out forwards;
+} */
+/* 
+@keyframes fade {
+    0% {
+        top: 10px;
+        left: 10px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+} */
+/*
+.show {
+    transform: translateX(0);
+    opacity: 1;
+} */
 
-}
-
-/*NAVIGATION MENU*/
+/*NAVIGATION MENU*******************/
 
 nav {
     background-color: white;
@@ -50,6 +73,9 @@ nav {
     color: rgb(48, 48, 48);
 }
 
+
+/*BANNER SECTION*******************/
+
 #banner {
     background-image: url("assets/browardvilla-scenery.jpg");
     background-size: cover;
@@ -62,6 +88,7 @@ nav {
     display: flex;
     align-items: center; 
     justify-content: center;
+    text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -100,7 +127,8 @@ nav {
     background-color: rgb(162, 133, 165);
     color: white;
     padding: 1%;
-    font-size: 0.5em;
+    font-size: 0.4em;
+    letter-spacing: 1px;
     border: transparent;
     margin-top: 5%;
     padding: 2% 3% 2% 3%;
