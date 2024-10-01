@@ -197,24 +197,39 @@ nav {
 /*VILLAS SECTION*******************/
 
 #villas {
-    background-color: #d49a3d;
+    background-color: #fff8ed;
     color: rgb(103, 55, 103);
     overflow: hidden; 
     /* height: 70vh; */
-    padding: 5em;
+    padding: 3em;
     font-size: 1.5em;
     width: 100%;
 }
 
-#card-container {
+#villas h3 {
+    font-size: 2.4em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 1%;
+}
+
+.card-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
+    /* background-color: red; */
+}
+
+.card {
+    width: 25%;
+    overflow: hidden;
+    /* background-color: blue; */
+    text-align: center;
 }
 
 .card img {
-    width: 25%;
+    width: 65%;
     margin: auto;
     border-top-left-radius: 45%;
     border-top-right-radius: 45%;
