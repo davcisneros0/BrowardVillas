@@ -222,7 +222,7 @@ nav {
     color: rgb(103, 55, 103);
     overflow: hidden; 
     /* height: 70vh; */
-    padding: 3em;
+    padding: 3em 3em 0em 3em;
     font-size: 1.5em;
     width: 100%;
 }
@@ -268,7 +268,7 @@ nav {
 }
 
 .garden-villa img {
-    width: 60%;
+    width: 65%;
     height: auto;
 }
 
@@ -286,25 +286,37 @@ nav {
 }
 
 #garden-villa-aside-right {
-    /* background-color: blue; */
     width: 50%;
     text-align: center;
 }
 
-.garden-villa-room {
+
+
+#best-villa {
     background-color: rgb(162, 133, 165);
-    width: 100vw;
+    color: white;
+    width: 100%;
+}
+
+.garden-villa-room-container {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-}
-
-.garden-villa-room img {
-    width: 25%;
-    height: auto;
-}
-
-.garden-villa-aside-left-down {
-    width: 50%;
+    width: 100%;
     text-align: center;
+    padding: 7%;
 }
+
+.garden-villa-room-container img {
+    width: 85%;
+    height: auto;
+    border: 2px solid blue;
+}
+
+.garden-villa-aside-left-down, .garden-villa-aside-right-up {
+    width: 100%;
+    text-align: center;
+    margin: 4%;
+}
+
+/*OFFERS SECTION*******************/
