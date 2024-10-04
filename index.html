@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bcf828a995.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -98,12 +99,12 @@
         <div class="garden-villa">
             <div id="garden-villa-aside-left">
                 <h4 class="fadeInEffect">Garden Villa</h4>
-                <hr>
-                <p>Showcase the best your property has to offer by highlighting one of your accommodations. Add a flattering photo, then describe the room's best feature.
+                <hr class="fadeInEffect">
+                <p class="fadeInEffect">Showcase the best your property has to offer by highlighting one of your accommodations. Add a flattering photo, then describe the room's best feature.
                 </p>
             </div>
 
-            <div id="garden-villa-aside-right">
+            <div id="garden-villa-aside-right" class="fadeInEffect">
                 <img src="assets/gardenvilla.jpg" alt="A photo of the garden villa includes a cobblestone walkway with 
                 plenty of palm trees and plants">
             </div>
@@ -128,9 +129,9 @@
 
     <section id="offers">
 
-        <h3>Special Offers</h3>
+        <h3 class="fadeInEffect">Special Offers</h3>
 
-        <div id="offers-card-container">
+        <div id="offers-card-container" class="fadeInEffect">
             <div class="offers-card">
                 <i class="fa fa-regular fa-sun"></i>
                 <h4>Summer to Remember</h4>
@@ -155,8 +156,9 @@
     </section>
 
     <section id="testimonials">
-        <h3>What Our Guests <br> Say About Us</h3>
-            <div class="testimonials-container">
+        <h3 class="fadeInEffect">What Our Guests <br> Say About Us</h3>
+            <div class="testimonials-container fadeInEffect">
+
                 <div class="testimonials-card">
                     <hr style="background-color: white;">
                     <q>Boost your product and service's credibility by adding testimonials from your clients. People love 
@@ -183,16 +185,23 @@
     </section>
 
     <section id="contact">
-        <video src="assets/champagne-glasses.mp4" autoplay muted loop class="footer-video"></video>
+        <video src="assets/champagne-glasses.mp4" autoplay muted loop class="footer-video">Your browser does not support 
+            the video tag. </video>
             <!-- <source src="assets/champagne-glasses.mp4" type="video/mp4"> -->
-            Your browser does not support the video tag. 
-            <p>See you soon -</p>
-            <p>We'll be waiting for you.</p>
-            <ul>
-                <li>Sunfolk Valley</li>
-                <li>+123-456-7890</li>
-                <li>hello@reallygreatsite.com</li>
-            </ul>
+             <div class="contact-container">
+                <div id="video-text">
+                    <p>See you soon</p>
+                    <p>We'll be waiting for you.</p>
+                </div>
+
+                <div id="contact-info">
+                    <ul>
+                        <li>Sunfolk Valley</li>
+                        <li>+123-456-7890</li>
+                        <li>hello@reallygreatsite.com</li>
+                    </ul>
+                </div>
+            </div>
     </section>
     
     <script src="index.js"></script>
