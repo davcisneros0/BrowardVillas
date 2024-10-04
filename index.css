@@ -56,7 +56,7 @@ nav {
     align-items: center; */
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 5;
     height: 3.3em;
 }
 
@@ -457,30 +457,70 @@ video {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 13em;
+    gap: 11em;
     margin-left: 18%;
     margin-top: 3%;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 #video-text {
-    background-color: rgb(0, 0, 0);
-    font-size: 2.5em;
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color: rgb(0, 0, 0); */
+    font-size: 2.7em;
     /* letter-spacing: 1px; */
 }
 
 #video-text p:nth-of-type(2) {
     margin-top: 1%;
-    color: green;
+    /* color: green; */
     font-size: 1.5em;
 }
 
 #contact-info {
-    background-color: red;
+    /* background-color: red;  */
     font-size: 1.2em;
     
 }
 
 ul {
     list-style-type: none;
+}
+
+li {
+    margin: 0.5%;
+    letter-spacing: 1px;
+}
+
+#social-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+}
+
+#social-icons-left {
+    /* color: red; */
+    /* font-size: 1.5em; */
+    /* margin-bottom: 20%; */
+    /* padding-top: 5%; */
+    /* padding-bottom: 25%; */
+    margin-right: 80%;
+}
+
+#social-icons-left i {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    font-size: 1.5em;
+    padding: 5px;
+    margin: 5px;
+}
+
+#social-icons-right {
+    text-align: center;
+    background-color: blue;
+    font-size: 1.3em;
+    font-family: 'Cinzel Decorative', serif;
 }
