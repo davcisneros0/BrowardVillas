@@ -467,6 +467,84 @@ li {
 
 /****MEDIA QUERIES***/
 
+@media screen and (max-width: 970px) {
+
+    .about-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    #about h3 {
+        font-size: 1.8em;
+    }
+
+    .about-icons {
+        font-size: 5em;
+    }
+
+    #villas {
+        padding: 0;
+    }
+    
+    .card-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 50%;
+        margin: 2%;
+    }
+
+    .garden-villa {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #garden-villa-aside-left {
+        width: 50%;
+        padding: 0;
+        margin-bottom: 3%;
+    }
+
+    #garden-villa-aside-right {
+        width: 70%;
+    }
+
+    .garden-villa-room-container {
+        flex-direction: column;
+    }
+
+    #offers-card-container {
+        flex-direction: column;
+        font-size: 0.9em;
+    }
+
+    #offers-card {
+        display: block;
+    }
+
+
+    .testimonials-container {
+        flex-direction: column;
+        font-size: 0.9em;
+        gap: 10%;
+    }
+
+    .contact-container {
+        margin-left: 2%;
+    }
+
+    #social-icons-container {
+        margin-top: 15%;
+    }
+
+    #social-icons-left {
+        margin-right: 40%;
+    }
+}
+
 @media screen and (max-width: 550px) {
 
     .nav-links {
