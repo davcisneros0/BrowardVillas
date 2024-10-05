@@ -484,8 +484,7 @@ li {
 @media screen and (max-width: 550px) {
 
     .nav-links {
-        display: none;
-        background-color: #ff9d00;
+        background-color: #fff8ed;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
@@ -493,10 +492,9 @@ li {
         height: 100vh;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -100%;
         z-index: 10;
         transition: 0.3s ease-in-out;
-        opacity: 0.5;
     } 
 
     .nav-links a {
@@ -508,19 +506,21 @@ li {
 
     .open-sidebar-btn {
         display: block;
+        cursor: pointer;
     }
 
     #sidebar-active:checked ~ .nav-links {
-        display: flex;
+        right: 0;
     }
-/* 
- 
-    /*hamburger menu icon*/
-    /* .open-menu {
-        display: block;
-        margin-top: 2.5%; 
+
+    #sidebar-active:checked ~ #overlay-sidebar {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
         cursor: pointer;
-        font-size: 1.5em;
-    } */
+        z-index: 5;
+    }
 
 }
