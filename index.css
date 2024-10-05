@@ -71,14 +71,13 @@ nav {
 
 /*BANNER SECTION*******************/
 
-#banner {
+#home {
     background-image: url("assets/browardvilla-scenery.jpg");
     background-size: cover;
     background-position-x: center;
     background-position-y: 80%;
     height: 48em;
     width: 100%;
-    /* height: 100vh; */
     max-width: 100%;
     overflow: hidden; 
     display: flex;
@@ -547,6 +546,11 @@ li {
 }
 
 @media screen and (max-width: 550px) {
+
+    #banner-frame p:nth-of-type(1){ 
+        font-size: 0.4em;
+        letter-spacing: 0.1px;
+    }
 
     .nav-links {
         background-color: #fff8ed;
