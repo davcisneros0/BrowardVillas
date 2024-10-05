@@ -18,3 +18,14 @@ function textInView(element) {
         rect.top < (window.innerHeight - 150 || document.documentElement.clientHeight - 150)
     );
 }
+
+
+// // const hamMenu = document.querySelector('open-menu');
+// const hamMenu = document.querySelector('open-menu');
+
+// const mobileMenu = document.querySelector('nav-links');
+
+// hamMenu.addEventListener('click', () => {
+//     hamMenu.classList.toggle('active');
+//     mobileMenu.classList.toggle('active');
+// })
