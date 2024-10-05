@@ -56,10 +56,8 @@ nav {
 } 
 
 .nav-links a {
-    /* height: 100%; */
-    margin: 0.9%;
+    margin: 1%;
     padding: 0.2%;
-    /* padding: 0.6%; */
     text-decoration: none;
     color: black;
     font-weight: bolder;
@@ -69,18 +67,6 @@ nav {
     text-decoration: none;
     color: rgb(48, 48, 48);
 }
-
- /*hamburger menu icon - active in media query with
- max width 550px*/
-/* .open-menu {
-    position: absolute;
-    cursor: pointer;
-    font-size: 1.5em;
-    top: 50%;
-    right: 20px;
-    display: none;
-    transform: translateY(-100%);
-} */
 
 
 /*BANNER SECTION*******************/
@@ -504,9 +490,11 @@ li {
         justify-content: flex-start;
     }
 
+    /*HAMBURGER MENU ICON*/
     .open-sidebar-btn {
         display: block;
         cursor: pointer;
+        margin-right: 2%;
     }
 
     #sidebar-active:checked ~ .nav-links {
@@ -521,6 +509,8 @@ li {
         left: 0;
         cursor: pointer;
         z-index: 5;
+        background-color: rgb(169, 169, 255);
+        opacity: 0.3;
     }
 
 }
